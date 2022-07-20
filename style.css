@@ -4,15 +4,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 /* banner section start */
 .banner_section {
-
     background-color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 646px;
 
 }
 
@@ -61,7 +60,10 @@ body {
 
 
 
-/* banner section start */
+/* banner section end */
+
+
+/* live section start */
 
 .live_section {
     display: flex;
@@ -165,7 +167,9 @@ i {
     padding: 10px;
 }
 
+/* live section end */
 
+/* footer section start */
 
 .footer_section {
     width: 100%;
@@ -183,4 +187,88 @@ i {
     text-decoration: none;
     color: white;
     padding: 0px 10px;
+}
+
+/* footer section start */
+
+
+
+
+/* mobile view */
+@media only screen and (max-width:500px) {
+    .banner_section {
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .live_section {
+        margin-top: 60px;
+    }
+
+
+
+    .live_left {
+
+        background-color: black;
+        border-radius: 5px;
+        padding: -10px;
+        color: whitesmoke;
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+
+    }
+
+    .live_right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* tablet view */
+@media only screen and (max-width:700px) {
+    .banner_section {
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .live_section {
+
+        margin-top: 60px;
+    }
+
+
+
+    .live_left {
+
+        background-color: black;
+        border-radius: 5px;
+        padding: -10px;
+        color: whitesmoke;
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .live_right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: row;
+    }
 }
