@@ -30,6 +30,17 @@ body {
     width: 91%;
 }
 
+
+@keyframes bg {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
 .livebtn {
     width: 90px;
     height: 50px;
@@ -38,12 +49,17 @@ body {
     padding: 5px 15px;
     text-decoration: none;
     color: whitesmoke;
+    animation-name: bg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
 }
 
 .btn {
     margin-top: 42px;
 }
+
+
 
 /* banner section start */
 
